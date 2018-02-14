@@ -16,7 +16,20 @@ class PortfolioContainer extends Component {
 
    //will return the component that needs to be rendered based on current selection
    findPage(){
-
+     const { currentPage } = this.state;
+     if (currentPage === "Home") {
+       return <Home/>;
+     } else if (currentPage === " About"){
+       return <About/>;
+     } else if ( currentPage === "Blog"){
+       return<Blog/>;
+     }
+     return <Contact/>;
+     }
+     componentMap = {
+       "Home": <Home/>,
+       "About": <About/>
+     };
 
   render() {
     return (
