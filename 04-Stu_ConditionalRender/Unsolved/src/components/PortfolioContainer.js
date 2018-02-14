@@ -14,6 +14,10 @@ class PortfolioContainer extends Component {
     this.setState({ currentPage: page });
   };
 
+   //will return the component that needs to be rendered based on current selection
+   findPage(){
+
+
   render() {
     return (
       <div>
@@ -21,8 +25,11 @@ class PortfolioContainer extends Component {
           currentPage={this.state.currentPage}
           handlePageChange={this.handlePageChange}
         />
+
+
         Based on `this.state.currentPage`, render the appropriate component
         here.
+       {this.findPage()}
       </div>
     );
   }

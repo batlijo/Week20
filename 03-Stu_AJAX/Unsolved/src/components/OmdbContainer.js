@@ -13,12 +13,24 @@ class OmdbContainer extends Component {
     search: ""
   };
 
+componentDidMount(){
+
+}
+
+
+
   // searchMovies = query => {
   //   API.search(query)
   //     .then(res => this.setState({ result: res.data }))
   //     .catch(err => console.log(err));
   // };
 
+  handleInputChange = (event) = > {
+    const {name, value} = event.target;
+    this.setSate({
+      [name]: value
+    });
+  }
   render() {
     return (
       <Container>

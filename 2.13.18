@@ -75,3 +75,9 @@ In React, you can create distinct components that encapsulate behavior you need.
 
 Conditional rendering in React works the same way conditions work in JavaScript. Use JS operators like if or the conditional operator to create elements representing
 the current state, and let React update the UI to match them.
+
+
+lifecycle components represent the DOM events we are familiar with like key up,
+
+componentDidMount() IS THE BEST ONE TO RUN ASYNCHRONOUS calls
+
