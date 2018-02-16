@@ -14,6 +14,8 @@ const App = () =>
       <Route exact path="/about" component={About} />
       <Route exact path="/blog" component={Blog} />
       <Route path="/contact" component={Contact} />
+
+      // these are all route components, with exact paths
     </div>
   </Router>;
 
