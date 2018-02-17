@@ -7,3 +7,77 @@ Class Objectives
     - Ideation
     - Group formation
     - Requirements
+
+
+    React is good for breaking down a problem into smaller sub-problems
+  
+
+    - know the difference between states
+    - you should never have things in your state function that are not in your render function
+
+  Will demos how slack uses react:
+
+We defined one component - one message in a channel:
+  POST COMPONENTS:
+  - Avatar: string
+  - Name: string
+  - Time: number
+  - Status: string
+  - Message: string
+  - RowID: number
+  - Reaction: array
+  - NavAction:
+  - then break this into a sub component:
+    - message header: 
+        - define some data that it needs to do its job
+            -name, status, time
+        - stateless, because it doesn't change
+    - message component:
+        - takes in a message
+        - type [text or snippet]
+        - stateless because it doesn't change
+    - avatar:
+        - path url
+    - reaction:
+        - takes reaction array 
+
+- we can compose this however we like whenever it comes time to putting it together
+- the whole point of decomposition is to build more things just like legos
+
+
+
+The Browser
+- HTML
+- CSS 
+- JAVASCRIPT
+- JQUERY
+- BOOTSTRAP
+
+API Interaction
+- Web APIs
+- JSON
+- AJAX
+- Real time cloud database via Firebase
+
+Cutting edge development
+- REACT.JS 
+
+Dev Tools
+- HEROKU
+- GIT
+- GITHUB
+
+Databases
+- MySQL
+- MongoDB
+
+Server Side
+- Templating engines
+- writing sessions
+- node.JS
+- express.JS
+- ORM: Mongoose
+
+CS Topics
+- Algorithms
+- Design patterns
